@@ -123,6 +123,39 @@ class RegistPage extends StatelessWidget {
                       prefixIcon: Icon(Icons.person, size: 25.0, color: Colors.white,),
                     ),
                   ),
+
+                  SizedBox(height: 10), 
+
+                  TextField(
+                    keyboardType: TextInputType.text,                      
+                      style: const TextStyle(color: Colors.white),
+                    decoration: InputDecoration(
+                      labelText: 'Nomor Handphone',
+                        labelStyle: const TextStyle(color: Colors.white),
+                      hintText : 'Masukkan Nomor Handphone Anda',
+                        hintStyle: const TextStyle(color: Colors.grey),
+                        
+                      border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12.0),
+                      ),
+
+                      enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      borderSide: BorderSide(color: Colors.white)
+                      ),
+
+                      focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      borderSide: BorderSide(
+                      color: Colors.blue[700]!,
+                      width: 2
+                      ),
+                    ),
+
+                    // icon
+                      prefixIcon: Icon(Icons.phone, size: 25.0, color: Colors.white,),
+                    ),
+                  ),
                 ],
               ),
             ),  
