@@ -57,6 +57,19 @@ class LoginPage extends StatelessWidget {
                     ),
                     textAlign: TextAlign.center,
                   ),
+
+                  SizedBox(height: 25),
+
+                  TextField(
+                    keyboardType: TextInputType.emailAddress,
+                    style: const TextStyle(color: Colors.white),
+                    decoration: InputDecoration(
+                    labelText: 'ID Member',
+                    labelStyle: const TextStyle(color: Colors.white),
+                    hintText : 'Masukkan ID Member Anda',
+                    hintStyle: const TextStyle(color: Colors.grey),
+                    ),
+                  ),
                 ],
               ),
             ),  
