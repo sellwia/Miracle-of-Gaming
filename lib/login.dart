@@ -68,6 +68,11 @@ class LoginPage extends StatelessWidget {
                     labelStyle: const TextStyle(color: Colors.white),
                     hintText : 'Masukkan ID Member Anda',
                     hintStyle: const TextStyle(color: Colors.grey),
+
+                    border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12.0),
+                    ),
+
                     ),
                   ),
                 ],
