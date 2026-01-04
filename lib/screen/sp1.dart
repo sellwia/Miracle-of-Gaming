@@ -53,7 +53,7 @@ class SpScreen1 extends StatelessWidget {
               "Temukan berbagai pilihan game dan nikmati pengalaman bermain yang menyenangkan",
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 10,
+                fontSize: 12,
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
               ),
