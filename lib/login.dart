@@ -112,6 +112,13 @@ class LoginPage extends StatelessWidget {
                     borderSide: BorderSide(color: Colors.white)
                     ),
 
+                    focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                    borderSide: BorderSide(
+                    color: Colors.blue[700]!,
+                    width: 2
+                    ),
+                  ),
                     ),
                   ),
                 ],
