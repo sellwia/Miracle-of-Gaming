@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:miracle_of_gaming/afterlogin/home.dart';
 import 'package:miracle_of_gaming/regist.dart';
 
 class LoginPage extends StatelessWidget {
@@ -165,7 +166,13 @@ class LoginPage extends StatelessWidget {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        //route : material page route
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => HomePage()),
+                        );
+                      },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.blue[700],
                         foregroundColor: Colors.white,
