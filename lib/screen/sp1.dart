@@ -33,7 +33,7 @@ class SpScreen1 extends StatelessWidget {
                 shape: BoxShape.circle,
                 color: Colors.amber,
                 image: DecorationImage(
-                  image: AssetImage("assets/images/stickps.png"),
+                  image: AssetImage("assets/images/Gamer.jpg"),
                   fit: BoxFit.cover,
                 ),
               ),
