@@ -39,8 +39,24 @@ class LoginPage extends StatelessWidget {
                     ),
                   ),
 
-                  SizedBox(height: 10),
-            
+                  SizedBox(height: 30),
+
+                  Text(
+                    "Login To Your Account",
+                    style: TextStyle(fontSize: 30, fontWeight: FontWeight.normal, color: Colors.white,),
+                  ),
+
+                  SizedBox(height: 10), //jarak 20 antara lingkaran dan teks
+
+                  Text(
+                    "Silahkan Login Untuk Melanjutkan",
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
                 ],
               ),
             ),  
