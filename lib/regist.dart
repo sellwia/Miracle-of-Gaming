@@ -125,39 +125,6 @@ class RegistPage extends StatelessWidget {
                     ),
                   ),
 
-                  SizedBox(height: 10), 
-
-                  TextField(
-                    keyboardType: TextInputType.text,                      
-                      style: const TextStyle(color: Colors.white),
-                    decoration: InputDecoration(
-                      labelText: 'Nomor Handphone',
-                        labelStyle: const TextStyle(color: Colors.white),
-                      hintText : 'Masukkan Nomor Handphone Anda',
-                        hintStyle: const TextStyle(color: Colors.grey),
-                        
-                      border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(12.0),
-                      ),
-
-                      enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(12),
-                      borderSide: BorderSide(color: Colors.white)
-                      ),
-
-                      focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(12),
-                      borderSide: BorderSide(
-                      color: Colors.blue[700]!,
-                      width: 2
-                      ),
-                    ),
-
-                    // icon
-                      prefixIcon: Icon(Icons.phone, size: 25.0, color: Colors.white,),
-                    ),
-                  ),
-
                   SizedBox(height: 10),
 
                   TextField(
@@ -254,6 +221,40 @@ class RegistPage extends StatelessWidget {
                       ),
                     ),
                   ),
+
+                  SizedBox(height: 20),
+
+                  // button simpan
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        //route : material page route
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => LoginPage()),
+                        );
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.blue[700],
+                        foregroundColor: Colors.white,
+                        padding: const EdgeInsets.symmetric(vertical: 16),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        elevation: 2,
+                      ),
+                      child: const Text(
+                        'Simpan',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+
+                  SizedBox(height: 20),
                 ],
               ),
             ),  
