@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       title: "Miracle Of Gaming",
       theme: ThemeData(
         useMaterial3: true,
+        fontFamily: 'Roboto',
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.black12)
       ),
       home: SpScreen1(),

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:miracle_of_gaming/screen/sp2.dart';
+
 
 class SpScreen1 extends StatelessWidget {
   const SpScreen1({super.key});
@@ -48,10 +50,10 @@ class SpScreen1 extends StatelessWidget {
             SizedBox(height: 20),
 
             Text(
-              "Temukan berbagai pilihan game dan \n nikmati pengalaman bermain yang menyenangkan",
+              "Temukan berbagai pilihan game dan nikmati pengalaman bermain yang menyenangkan",
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 12,
+                fontSize: 10,
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
               ),
@@ -93,7 +95,31 @@ class SpScreen1 extends StatelessWidget {
                 SizedBox(width: 10),
               ],
             ),
+
             SizedBox(height: 30),
+
+            Container(
+              margin: EdgeInsets.only(left: 40, right: 40),
+              child: SizedBox(
+                height: 40,
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () {
+                    //route : material page route
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SpScreen2()),
+                    );
+                    // panggil slide selanjutnya
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.white,
+                  ),
+                    child: Text("Continue", style: TextStyle(fontSize: 14, color : Colors.black)),
+                ),
+              ),
+            ),
+
 
           ],
         ),
