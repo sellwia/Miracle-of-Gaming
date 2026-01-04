@@ -64,6 +64,15 @@ flutter:
       - assets/images/Play.jpg
       - assets/images/Lg.png
       - assets/images/join.jpg
+
+      #Poster
+      - assets/images/Game1.png
+      - assets/images/Game2.png
+      - assets/images/Game3.png
+      - assets/images/Game4.png
+      - assets/images/Game5.png
+      - assets/images/Game6.png
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
