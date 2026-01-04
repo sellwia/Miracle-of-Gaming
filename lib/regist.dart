@@ -194,6 +194,44 @@ class RegistPage extends StatelessWidget {
                       suffixIcon: const Icon(Icons.visibility_outlined),
                     ),
                   ),
+
+                  SizedBox(height: 10),
+
+                  TextField(
+                    obscureText: true,
+                    style: const TextStyle(color: Colors.white),
+                    decoration: InputDecoration(
+                      labelText: 'Konfirmasi Password',
+                      labelStyle: const TextStyle(color: Colors.white),
+                      hintText: 'Masukkan Ulang Password Anda',
+                      hintStyle: const TextStyle(color: Colors.grey),
+
+                      //garis kolom
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(12.0),
+                      ),
+
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(12),
+                        borderSide: BorderSide(color: Colors.white),
+                      ),
+
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(12),
+                        borderSide: BorderSide(
+                          color: Colors.blue[700]!,
+                          width: 2,
+                        ),
+                      ),
+
+                      //icon
+                      prefixIcon: const Icon(
+                        Icons.lock_outline,
+                        color: Colors.white,
+                      ),
+                      suffixIcon: const Icon(Icons.visibility_outlined),
+                    ),
+                  ),
                 ],
               ),
             ),  
