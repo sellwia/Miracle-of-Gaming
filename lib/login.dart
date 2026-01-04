@@ -69,7 +69,7 @@ class LoginPage extends StatelessWidget {
                         labelStyle: const TextStyle(color: Colors.white),
                       hintText : 'Masukkan ID Member Anda',
                         hintStyle: const TextStyle(color: Colors.grey),
-
+                        
                       border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12.0),
                       ),
@@ -148,6 +148,31 @@ class LoginPage extends StatelessWidget {
                   ),
 
                   SizedBox(height: 20), 
+
+                  // button login
+                  
+
+                 SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.blue[700],
+                        foregroundColor: Colors.white,
+                        padding: const EdgeInsets.symmetric(vertical: 16),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        elevation: 2,
+                      ),
+                      child: const Text(
+                        'Login',
+                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ),
+
+                    SizedBox(height: 20), 
 
                 ],
               ),
