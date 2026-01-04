@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:miracle_of_gaming/login.dart';
+import 'package:miracle_of_gaming/regist.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Roboto',
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.black12)
       ),
-      home: LoginPage(),
+      home: RegistPage(),
     );
   }
 }

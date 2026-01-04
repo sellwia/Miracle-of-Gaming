@@ -23,17 +23,17 @@ class LoginPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Container(
-            padding:  EdgeInsets.all(20.0),
-            child: Column(
-              children: [
-                SizedBox(height: 10),    
-                Container(
-                  width: 250,
-                  height: 250,
+              padding: EdgeInsets.all(20.0),
+              child: Column(
+                children: [
+                  SizedBox(height: 10),
+                  Container(
+                    width: 250,
+                    height: 250,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       color: Colors.white,
-                        image: DecorationImage(
+                      image: DecorationImage(
                         image: AssetImage("assets/images/Lg.png"),
                         fit: BoxFit.cover,
                       ),
@@ -44,7 +44,11 @@ class LoginPage extends StatelessWidget {
 
                   Text(
                     "Login To Your Account",
-                    style: TextStyle(fontSize: 30, fontWeight: FontWeight.normal, color: Colors.white,),
+                    style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.normal,
+                      color: Colors.white,
+                    ),
                   ),
 
                   SizedBox(height: 10), //jarak 20 antara lingkaran dan teks
@@ -63,71 +67,78 @@ class LoginPage extends StatelessWidget {
 
                   TextField(
                     keyboardType: TextInputType.text,
-                      style: const TextStyle(color: Colors.white),
+                    style: const TextStyle(color: Colors.white),
                     decoration: InputDecoration(
                       labelText: 'ID Member',
-                        labelStyle: const TextStyle(color: Colors.white),
-                      hintText : 'Masukkan ID Member Anda',
-                        hintStyle: const TextStyle(color: Colors.grey),
-                        
+                      labelStyle: const TextStyle(color: Colors.white),
+                      hintText: 'Masukkan ID Member Anda',
+                      hintStyle: const TextStyle(color: Colors.grey),
+
                       border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(12.0),
+                        borderRadius: BorderRadius.circular(12.0),
                       ),
 
                       enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(12),
-                      borderSide: BorderSide(color: Colors.white)
+                        borderRadius: BorderRadius.circular(12),
+                        borderSide: BorderSide(color: Colors.white),
                       ),
 
                       focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(12),
-                      borderSide: BorderSide(
-                      color: Colors.blue[700]!,
-                      width: 2
+                        borderRadius: BorderRadius.circular(12),
+                        borderSide: BorderSide(
+                          color: Colors.blue[700]!,
+                          width: 2,
+                        ),
                       ),
-                    ),
 
-                    // icon
-                      prefixIcon: Icon(Icons.person, size: 25.0, color: Colors.white,),
+                      // icon
+                      prefixIcon: Icon(
+                        Icons.person,
+                        size: 25.0,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
 
-                  SizedBox(height: 10), 
+                  SizedBox(height: 10),
 
                   TextField(
                     obscureText: true,
-                      style: const TextStyle(color: Colors.white),
+                    style: const TextStyle(color: Colors.white),
                     decoration: InputDecoration(
-                    labelText: 'Password',
+                      labelText: 'Password',
                       labelStyle: const TextStyle(color: Colors.white),
-                    hintText : 'Masukkan Password Anda',
-                        hintStyle: const TextStyle(color: Colors.grey),
+                      hintText: 'Masukkan Password Anda',
+                      hintStyle: const TextStyle(color: Colors.grey),
 
-                    //garis kolom
-                    border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12.0),
-                    ), 
+                      //garis kolom
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(12.0),
+                      ),
 
-                    enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12),
-                    borderSide: BorderSide(color: Colors.white)
-                    ),
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(12),
+                        borderSide: BorderSide(color: Colors.white),
+                      ),
 
-                    focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12),
-                    borderSide: BorderSide(
-                    color: Colors.blue[700]!,
-                    width: 2
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(12),
+                        borderSide: BorderSide(
+                          color: Colors.blue[700]!,
+                          width: 2,
+                        ),
+                      ),
+
+                      //icon
+                      prefixIcon: const Icon(
+                        Icons.lock_outline,
+                        color: Colors.white,
+                      ),
+                      suffixIcon: const Icon(Icons.visibility_outlined),
                     ),
                   ),
 
-                   //icon 
-                    prefixIcon: const Icon(Icons.lock_outline, color: Colors.white,),
-                    suffixIcon: const Icon(Icons.visibility_outlined),
-                    ),
-                  ),
-
-                  SizedBox(height: 10), 
+                  SizedBox(height: 10),
 
                   //Daftar Akun
                   Align(
@@ -135,24 +146,23 @@ class LoginPage extends StatelessWidget {
                     //Masuk Kehalaman Daftar Akun
                     child: TextButton(
                       onPressed: () {
-                      //route : material page route
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => RegistPage()),
-                      );
-                    },
-                    child: Text('Belum Punya Akun?',
-                      style: TextStyle(color: Colors.blue[700],fontSize: 14),
+                        //route : material page route
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => RegistPage()),
+                        );
+                      },
+                      child: Text(
+                        'Belum Punya Akun?',
+                        style: TextStyle(color: Colors.blue[700], fontSize: 14),
                       ),
                     ),
                   ),
 
-                  SizedBox(height: 20), 
+                  SizedBox(height: 20),
 
                   // button login
-                  
-
-                 SizedBox(
+                  SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
                       onPressed: () {},
@@ -167,16 +177,18 @@ class LoginPage extends StatelessWidget {
                       ),
                       child: const Text(
                         'Login',
-                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ),
 
-                    SizedBox(height: 20), 
-
+                  SizedBox(height: 20),
                 ],
               ),
-            ),  
+            ),
           ],
         ),
       ),
