@@ -93,6 +93,36 @@ class RegistPage extends StatelessWidget {
 
                   SizedBox(height: 10), 
 
+                  TextField(
+                    keyboardType: TextInputType.text,                      
+                      style: const TextStyle(color: Colors.white),
+                    decoration: InputDecoration(
+                      labelText: 'Nama Lengkap',
+                        labelStyle: const TextStyle(color: Colors.white),
+                      hintText : 'Masukkan Nama Lengkap Anda',
+                        hintStyle: const TextStyle(color: Colors.grey),
+                        
+                      border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12.0),
+                      ),
+
+                      enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      borderSide: BorderSide(color: Colors.white)
+                      ),
+
+                      focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      borderSide: BorderSide(
+                      color: Colors.blue[700]!,
+                      width: 2
+                      ),
+                    ),
+
+                    // icon
+                      prefixIcon: Icon(Icons.person, size: 25.0, color: Colors.white,),
+                    ),
+                  ),
                 ],
               ),
             ),  
