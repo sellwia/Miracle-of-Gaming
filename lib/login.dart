@@ -64,31 +64,30 @@ class LoginPage extends StatelessWidget {
                     keyboardType: TextInputType.emailAddress,
                     style: const TextStyle(color: Colors.white),
                     decoration: InputDecoration(
-                    labelText: 'ID Member',
-                    labelStyle: const TextStyle(color: Colors.white),
-                    hintText : 'Masukkan ID Member Anda',
-                    hintStyle: const TextStyle(color: Colors.grey),
+                      labelText: 'ID Member',
+                      labelStyle: const TextStyle(color: Colors.white),
+                      hintText : 'Masukkan ID Member Anda',
+                      hintStyle: const TextStyle(color: Colors.grey),
 
-                    border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12.0),
+                      border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12.0),
+                      ),
+
+                      enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      borderSide: BorderSide(color: Colors.white)
+                      ),
+
+                      focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      borderSide: BorderSide(
+                      color: Colors.blue[700]!,
+                      width: 2
+                      ),
                     ),
 
-                    enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12),
-                    borderSide: BorderSide(color: Colors.white)
-                    ),
-
-                    focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12),
-                    borderSide: BorderSide(
-                    color: Colors.blue[700]!,
-                    width: 2
-                    ),
-                  ),
-
-
-
-
+                    // icon
+                      prefixIcon: Icon(Icons.person, size: 25.0),
                     ),
                   ),
                 ],
