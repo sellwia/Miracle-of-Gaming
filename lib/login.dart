@@ -87,7 +87,7 @@ class LoginPage extends StatelessWidget {
                     ),
 
                     // icon
-                      prefixIcon: Icon(Icons.person, size: 25.0),
+                      prefixIcon: Icon(Icons.person, size: 25.0, color: Colors.white,),
                     ),
                   ),
 
@@ -119,6 +119,10 @@ class LoginPage extends StatelessWidget {
                     width: 2
                     ),
                   ),
+
+                   //icon 
+                    prefixIcon: const Icon(Icons.lock_outline, color: Colors.white,),
+                    suffixIcon: const Icon(Icons.visibility_outlined),
                     ),
                   ),
                 ],
