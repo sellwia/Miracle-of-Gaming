@@ -62,7 +62,7 @@ class LoginPage extends StatelessWidget {
                   SizedBox(height: 25),
 
                   TextField(
-                    keyboardType: TextInputType.emailAddress,
+                    keyboardType: TextInputType.text,
                       style: const TextStyle(color: Colors.white),
                     decoration: InputDecoration(
                       labelText: 'ID Member',
