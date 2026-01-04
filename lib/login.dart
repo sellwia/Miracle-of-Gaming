@@ -62,12 +62,12 @@ class LoginPage extends StatelessWidget {
 
                   TextField(
                     keyboardType: TextInputType.emailAddress,
-                    style: const TextStyle(color: Colors.white),
+                      style: const TextStyle(color: Colors.white),
                     decoration: InputDecoration(
                       labelText: 'ID Member',
-                      labelStyle: const TextStyle(color: Colors.white),
+                        labelStyle: const TextStyle(color: Colors.white),
                       hintText : 'Masukkan ID Member Anda',
-                      hintStyle: const TextStyle(color: Colors.grey),
+                        hintStyle: const TextStyle(color: Colors.grey),
 
                       border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12.0),
@@ -88,6 +88,19 @@ class LoginPage extends StatelessWidget {
 
                     // icon
                       prefixIcon: Icon(Icons.person, size: 25.0),
+                    ),
+                  ),
+
+                  SizedBox(height: 10), 
+
+                  TextField(
+                    obscureText: true,
+                      style: const TextStyle(color: Colors.white),
+                    decoration: InputDecoration(
+                    labelText: 'Password',
+                      labelStyle: const TextStyle(color: Colors.white),
+                    hintText : 'Masukkan Password Anda',
+                        hintStyle: const TextStyle(color: Colors.grey),
                     ),
                   ),
                 ],
