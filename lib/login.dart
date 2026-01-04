@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:miracle_of_gaming/regist.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -131,7 +132,15 @@ class LoginPage extends StatelessWidget {
                   //Daftar Akun
                   Align(
                     alignment: Alignment.centerRight,
-                    child: TextButton(onPressed: (){},
+                    //Masuk Kehalaman Daftar Akun
+                    child: TextButton(
+                      onPressed: () {
+                      //route : material page route
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => RegistPage()),
+                      );
+                    },
                     child: Text('Belum Punya Akun?',
                       style: TextStyle(color: Colors.blue[700],fontSize: 14),
                       ),
