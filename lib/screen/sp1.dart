@@ -42,7 +42,7 @@ class SpScreen1 extends StatelessWidget {
             Text(
               "Welcome To \n Miracle Of Gaming",
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 40, color: Colors.white, height: 1.2,),
+              style: TextStyle(fontSize: 30, color: Colors.white, height: 1.2,),
             ),
 
             SizedBox(height: 20),
@@ -81,7 +81,7 @@ class SpScreen1 extends StatelessWidget {
                   ),
                 ),
                 SizedBox(width: 10),
-                
+
                 Container(
                   width: 10,
                   height: 10,
