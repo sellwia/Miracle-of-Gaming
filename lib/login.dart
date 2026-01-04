@@ -125,6 +125,21 @@ class LoginPage extends StatelessWidget {
                     suffixIcon: const Icon(Icons.visibility_outlined),
                     ),
                   ),
+
+                  SizedBox(height: 10), 
+
+                  //Daftar Akun
+                  Align(
+                    alignment: Alignment.centerRight,
+                    child: TextButton(onPressed: (){},
+                    child: Text('Belum Punya Akun?',
+                      style: TextStyle(color: Colors.blue[700],fontSize: 14),
+                      ),
+                    ),
+                  ),
+
+                  SizedBox(height: 20), 
+
                 ],
               ),
             ),  
