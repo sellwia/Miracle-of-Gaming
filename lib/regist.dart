@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:miracle_of_gaming/login.dart';
 
 class RegistPage extends StatelessWidget {
   const RegistPage({super.key});
@@ -230,6 +231,27 @@ class RegistPage extends StatelessWidget {
                         color: Colors.white,
                       ),
                       suffixIcon: const Icon(Icons.visibility_outlined),
+                    ),
+                  ),
+
+                  SizedBox(height: 10),
+
+                  //Punya Akun
+                  Align(
+                    alignment: Alignment.centerRight,
+                    //Masuk Kehalaman Punya Akun
+                    child: TextButton(
+                      onPressed: () {
+                        //route : material page route
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => LoginPage()),
+                        );
+                      },
+                      child: Text(
+                        'Sudah Punya Akun?',
+                        style: TextStyle(color: Colors.blue[700], fontSize: 14),
+                      ),
                     ),
                   ),
                 ],
