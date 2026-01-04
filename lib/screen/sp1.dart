@@ -82,6 +82,15 @@ class SpScreen1 extends StatelessWidget {
                 ),
                 SizedBox(width: 10),
                 
+                Container(
+                  width: 10,
+                  height: 10,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Color.fromARGB(255, 55, 52, 48),
+                  ),
+                ),
+                SizedBox(width: 10),
               ],
             ),
             SizedBox(height: 30),
